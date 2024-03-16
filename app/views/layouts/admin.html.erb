@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ecom</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="flex w-full">
+     <div class="w-64 p-4 h-screen bg-gray-600 sticky top-8">
+        <div class="flex">
+            <%= image_tag 'logo.png' ,class: 'w-6'%>
+            <h1 class="text-md py-2 text-gray-50 font-bold hidden md:block">Ecommerce  Admin</h1>
+        </div>
+        <ul>
+            <li>
+                <%= link_to admin_path, :class => "block px-4 py-2 hover:rounded hover:bg-gray-700" do %>
+                <% icon('fa-solid', 'gauge-high') %>
+                <span class="hidden md:inline-block"> Dashboard</span>
+                <% end %> 
+            </li>
+        </ul>
+     </div>
+    </nav>
+    <%= yield %>
+  </body>
+</html>
