@@ -13,8 +13,8 @@
 
   <body>
     <main class="flex">
-        <nav class="flex w-full">
-            <div class="w-64 p-4 h-screen bg-gray-600 sticky top-8">
+        <nav class="flex">
+            <div class="w-64 p-4 h-screen bg-gray-600 sticky top-0">
                 <div class="flex">
                     <%= image_tag 'logo.png' ,class: 'w-16'%>
                     <h1 class="text-md py-2 text-gray-50 font-bold hidden md:block">Ecommerce  Admin</h1>
@@ -45,7 +45,9 @@
                 </ul>
             </div>
         </nav>
-        <%= yield %>
+        <div class="p-8 w-full">
+            <%= yield %>
+        </div>
     </main>
   </body>
 </html>
