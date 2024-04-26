@@ -65,3 +65,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "devise", "~> 4.9"
 
 gem 'font-awesome-sass', '~> 6.5.1'
+
+gem "importmap-rails", "~> 2.0"
+
+gem "stimulus-rails"
