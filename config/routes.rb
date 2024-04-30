@@ -13,8 +13,8 @@ Rails.application.routes.draw do
   authenticated :admin_user do
     root to: "admin#index", as: :admin_root
   end
+  resources :categories, only: [:show]
 
   get "admin"=> "admin#index"
-  get "category" => "category#index"
 end
 
