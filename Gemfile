@@ -69,3 +69,6 @@ gem 'font-awesome-sass', '~> 6.5.1'
 gem "importmap-rails", "~> 2.0"
 
 gem "stimulus-rails"
+
+gem 'sprockets-rails'
+gem "jsbundling-rails", "~> 1.3"

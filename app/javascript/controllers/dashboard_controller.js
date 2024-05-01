@@ -7,7 +7,7 @@ Chart.register(...registerables)
 export default class extends Controller {
   static values = { revenue: Array }
   connect(){
-    console.log("first")
+    console.log("ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd")
 
   }
   initialize() {
